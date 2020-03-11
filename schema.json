@@ -1,0 +1,281 @@
+{
+  "type": "object",
+  "properties": {
+    "companyName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "companyDetails": {
+      "type": "object",
+      "required": ["title", "companyName"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "patternRequired": ["f.*o"]
+        },
+
+        "companyName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aboutCompany": {
+          "type": "string"
+        },
+        "postedDate": {
+          "type": "string",
+          "format": "date-time",
+          "default": "01-01-2020 11:59:59 am"
+        },
+        "location": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "importantLink": {
+      "type": "object",
+      "properties": {
+        "apply": {
+          "type": "string"
+        },
+        "official website": {
+          "type": "string"
+        },
+        "download notification": {
+          "type": "string"
+        }
+      }
+    },
+    "categories": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "apprentice",
+            "accounts-finance",
+            "agriculture",
+            "aviation",
+            "bank",
+            "clerk",
+            "defense",
+            "engineering",
+            "faculty-teaching",
+            "it-computer",
+            "law-judiciary",
+            "management",
+            "medical-pharma",
+            "paramedical",
+            "police",
+            "power-energy",
+            "public-sector",
+            "railway",
+            "scientist-research",
+            "ssc-sssc",
+            "staff-nurse",
+            "stenographer",
+            "technician",
+            "telecom",
+            "upsc-psc"
+          ]
+        }
+      }
+    },
+    "importantDates": {
+      "type": "object",
+      "properties": {
+        "applicationStartDate": {
+          "type": "string",
+          "format": "date-time",
+          "default": "01-01-2020 12:00:00 am"
+        },
+        "applicationLastDate": {
+          "type": "string",
+          "format": "date-time",
+          "default": "01-01-2020 11:59:59 pm"
+        },
+        "examDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "paymentLastDate": {
+          "type": "string",
+          "format": "date-time",
+          "default": "01-01-2020 11:59:59 am"
+        }
+      }
+    },
+    "categoryWiseFee": {
+      "type": "object",
+
+      "properties": {
+        "general": {
+          "type": "integer"
+        },
+        "obc": {
+          "type": "integer"
+        },
+        "sc": {
+          "type": "integer"
+        },
+        "st": {
+          "type": "integer"
+        },
+
+        "bca": {
+          "type": "integer"
+        },
+        "ews": {
+          "type": "integer"
+        },
+        "bcb": {
+          "type": "integer"
+        },
+        "exsm": {
+          "type": "integer"
+        },
+        "ph": {
+          "type": "integer"
+        },
+        "women": {
+          "type": "integer"
+        }
+      }
+    },
+    
+    "others": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "caption": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    
+    "apply": {
+      "type": "object",
+      "label": "Apply same information to all vacancies",
+      "properties": {
+        "eligibility":{
+          "type":"boolean"
+        },
+        "minAge":{
+          "type":"boolean"
+        },
+        "maxAge":{
+          "type":"boolean"
+        },
+        "minSalary":{
+          "type":"boolean"
+        },
+        "maxSalary":{
+          "type":"boolean"
+        }
+      }
+
+    },
+    "vacancyDetail": {
+      "type": "array",
+      "items": {
+        "type": "object",
+
+        "properties": {
+          "position": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          },
+          "ageLimitMin": {
+            "type": "integer",
+            "minimum": 18,
+            "maximum": 99
+          },
+          "ageLimitMax": {
+            "type": "integer",
+            "minimum": 18,
+            "maximum": 99
+          },
+          "ageAsOn": {
+            "type": "string",
+            "format": "date-time",
+            "default": "01-01-2020 11:59:59 pm"
+          },
+          "minSalary": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "maxSalary": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "totalVacancy": {
+            "type": "integer"
+          },
+          "categoryWiseVacancy": { 
+            "type": "object",
+
+            "options": {
+              "detail": {
+                "type": "HorizontalLayout"
+              }
+            },
+            "properties": {
+              "general": {
+                "type": "integer"
+              },
+              "obc": {
+                "type": "integer"
+              },
+              "sc": {
+                "type": "integer"
+              },
+              "st": {
+                "type": "integer"
+              },
+              "bca": {
+                "type": "integer"
+              },
+              "ews": {
+                "type": "integer"
+              },
+              "bcb": {
+                "type": "integer"
+              },
+              "exsm": {
+                "type": "integer"
+              },
+              "ph": {
+                "type": "integer"
+              },
+              "women": {
+                "type": "integer"
+              }
+            }
+          },
+       
+          "eligibility": {
+            "type": "array",
+            "options": {
+              "detail": {
+                "type": "HorizontalLayout"
+              }
+            },
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

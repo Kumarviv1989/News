@@ -1,0 +1,212 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "VerticalLayout",
+          "elements": [
+            {
+              "type": "Group",
+              "label": "Company Details",
+              "elements": [
+                {
+                  "type": "VerticalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/companyDetails/properties/title"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/companyDetails/properties/companyName"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/companyDetails/properties/aboutCompany",
+                      "option": {
+                        "multi": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "HorizontalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/companyDetails/properties/postedDate"
+                    }
+                  ]
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/companyDetails/properties/location"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "VerticalLayout",
+          "elements": [
+            {
+              "type": "Group",
+              "label": "Important Dates",
+              "elements": [
+                {
+                  "type": "VerticalLayout",
+                  "elements": [
+                    {
+                      "type": "HorizontalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/importantDates/properties/applicationStartDate"
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/importantDates/properties/applicationLastDate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "HorizontalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/importantDates/properties/examDate"
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/importantDates/properties/paymentLastDate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "scope": "#/properties/categoryWiseFee",
+              "type": "Group",
+              "label": "category Wise Fee",
+              "elements": [
+                {
+                  "type": "HorizontalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/general"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/obc"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/sc"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/st"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/bca"
+                    }
+                  ]
+                },
+                {
+                  "type": "HorizontalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/ews",
+                      "label": "EWS"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/bcb"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/exsm"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/ph"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/categoryWiseFee/properties/women"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "type": "VerticalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/importantLink"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/categories"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Other Details",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "label": "",
+              "scope": "#/properties/others"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "label": "Apply same information to all vacancies",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            { "type": "Control", "scope": "#/properties/apply/properties/eligibility" },
+            { "type": "Control", "scope": "#/properties/apply/properties/minAge" },
+            { "type": "Control", "scope": "#/properties/apply/properties/maxAge" },
+            { "type": "Control", "scope": "#/properties/apply/properties/minSalary" },
+            { "type": "Control", "scope": "#/properties/apply/properties/maxSalary" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/vacancyDetail",
+          "options": {
+            "showSortButtons": true
+          }
+        }
+      ]
+    }
+  ]
+}

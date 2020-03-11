@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#form > div > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div > div > div > div > div > div{
+  flex-direction: row;
+}
+
+#form > div > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(8) {
+  flex-basis: 100%;
+}
+
+#form > div > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(9) {
+  flex-basis: 100%;
+}
+
+#form > div > div:nth-child(5) > div > div > div > div:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(8) > div > div > div{
+  flex-direction: row;
+}
+
+
+#form > div > div:nth-child(4) > div > div > div > div:nth-child(2) > div > div > div > div > div > div > div > div:nth-child(9) > div > div > div{
+  flex-direction: row;
+}
+
+div[class^="MuiExpansionPanel"] > div[class^="MuiGrid-root"]  div[class^="MuiCardContent"] div[class^="MuiGrid"]  div[class^="MuiFormControl"]{
+  width: auto;
+}
+
+div[class^="MuiExpansionPanelDetails"] > div[class^="MuiGrid-root"]> div[class^="MuiGrid-root"]:nth-last-of-type(2){
+  flex-basis: 100%;
+}
+
+
+div[class^="MuiExpansionPanelDetails"] > div[class^="MuiGrid-root"]> div[class^="MuiGrid-root"]:nth-last-of-type(3){
+flex-basis: 100%;
+}
+
+
+div[class^="MuiExpansionPanelDetails"] > div[class^="MuiGrid-root"]> div[class^="MuiGrid-root"] div[class^='MuiCardContent'] div[class^="MuiGrid"]{
+margin-right: 10px;
+flex-direction: row;
+}
+
+div[class^="MuiExpansionPanelDetails"] > div[class^="MuiGrid-root"] {
+  /* background:red; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div[class^="MuiExpansionPanelDetails"] > div[class^="MuiGrid-root"]  div[class^="MuiFormControl"]{
+  width: 200px;
+}
+
+div[class^="MuiExpansionPanelDetails"] > div[class^="MuiCardContent"] div[class^="MuiGrid-root"] div[class^="MuiGrid"] {
+  /* background:blue;; */
+  width: max-content
+}
+
+div[class^="MuiCardHeader"],div[class^="MuiCardContent"]{
+  padding: 5px;
+}

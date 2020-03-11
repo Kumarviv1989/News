@@ -1,0 +1,83 @@
+{"jobs":[{
+  "companyDetails": {
+    "companyName": "SBI ",
+    "aboutCompany": "SBI public sector bank",
+    "postedDate": "2019-08-03",
+    "location": [
+      "Bangalore"
+    ]
+  },
+  "importantDates": {
+    "applicationStartDate": "2019-08-22",
+    "applicationLastDate": "2019-09-26",
+    "examDate": "2019-11-29",
+    "paymentLastDate": "2019-09-26",
+    "applyDate": "2019-08-30"
+  },
+  "importantLink": {
+    "apply": "www.foo.com",
+    "register": "www.foo.com",
+    "downloadAdmitCard": "www.foo.com",
+    "officialWebsite": "www.foo.com",
+    "downloadNotification": "www.foo.com"
+  },
+  "vacancyDetail": [
+    {
+      "position": "Probationary Officer",
+      "department": "Banking",
+      "ageLimit": 35,
+      "categoryWiseVacancy": {
+        "general": 10,
+        "sc": 10,
+        "st": 10,
+        "obc": 4,
+        "bca": 4,
+        "ews": 4,
+        "bcb": 4
+      },
+      "eligibility": "Graduate Degree",
+      "totalVacancy": 46
+    }
+  ]
+},{
+    "companyDetails": {
+      "companyName": "SBI",
+      "aboutCompany": "SBI public sector bank",
+      "postedDate": "2019-08-03",
+      "location": [
+        "Bangalore"
+      ]
+    },
+    "importantDates": {
+      "applicationStartDate": "2019-08-22",
+      "applicationLastDate": "2019-09-26",
+      "examDate": "2019-11-29",
+      "paymentLastDate": "2019-09-26",
+      "applyDate": "2019-08-30"
+    },
+    "importantLink": {
+      "apply": "www.foo.com",
+      "register": "www.foo.com",
+      "downloadAdmitCard": "www.foo.com",
+      "officialWebsite": "www.foo.com",
+      "downloadNotification": "www.foo.com"
+    },
+    "vacancyDetail": [
+      {
+        "position": "Probationary Officer",
+        "department": "Banking",
+        "ageLimit": 35,
+        "categoryWiseVacancy": {
+          "general": 10,
+          "sc": 10,
+          "st": 10,
+          "obc": 4,
+          "bca": 4,
+          "ews": 4,
+          "bcb": 4
+        },
+        "eligibility": "Graduate Degree",
+        "totalVacancy": 46
+      }
+    ]
+  }]}
